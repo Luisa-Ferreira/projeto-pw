@@ -1,0 +1,30 @@
+{% extends 'projeto/layout.html' %}
+
+{% block content %}
+
+
+    <p class="faculdade">FACULDADE</p>
+
+    <p class="universidade"> Universidade Lusófona - Centro Universitário Lisboa</p>
+
+    <p><h1>{{curso.nome}}</h1></p>
+
+    <p>{{curso.apresentacao}}</p>
+
+    {% load projetotags %}
+        <p><h2>Objetivos:</h2></p>
+        <p>{{curso.objetivos|divisao_objetivos_info|safe}}</p>
+
+    <p><h2>Competências adquiridas:</h2></p>
+    <p>{{curso.competencias|divisao_competencias_info|safe}}</p>
+
+    <p><h2>Docentes administrativos:</h2></p>
+    <ul>
+    {% for docente in curso.docenteCurso.all %}
+        <li>
+        <p>{{docente.nomeDocente}} : {{docente.email}}</p>
+        </li>
+    {% endfor %}
+
+    </ul>
+{% endblock %}

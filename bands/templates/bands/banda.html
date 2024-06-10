@@ -1,0 +1,60 @@
+{% extends 'bands/layout.html' %}
+
+{% block content %}
+
+<div class="banda-container">
+    <div class="banda-info">
+        <a class="album-link" href="{% url 'bands:index' %}">Bandas</a>
+        <div class="nome-banda">
+            <h2>{{banda.nome}}</h2>
+            <div class="admin-buttons">
+                {% if user_is_editor %}
+                <a href="{% url 'bands:edita_banda' banda.id %}">
+                    <button>Editar informação de {{ banda.nome }}</button>
+                </a>
+                {% endif %}
+                {% if user_is_superuser %}
+                <a href="{% url 'bands:apaga_banda' banda.id %}">
+                    <button>Extermina a Banda</button>
+                </a>
+                {% endif %}
+                {% if user_is_editor %}
+                <a href="{% url 'bands:novo_album' banda.id %}">
+                    <button>Inserir um novo Album</button>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="biografia">
+            <p>Biografia:</p>
+            <p>{{banda.biografia}}</p>
+            <p>Nacionalidade: {{banda.nacionalidade}}</p>
+            <p>Ano de criação da banda: {{banda.ano_criacao}}</p>
+        </div>
+    </div>
+    <div class="albuns-container">
+        <div class="albuns-titulos">
+            <h1>Albuns</h1>
+            {% load bandstags %}
+            {% with banda.id|albuns_ordData as albuns_ordenados %}
+            {% for album in albuns_ordenados %}
+            <p>{{album.titulo}}</p>
+            {% endfor %}
+            {% endwith %}
+        </div>
+        <div class="albuns-capas">
+            {% load bandstags %}
+            {% with banda.id|albuns_ordData as albuns_ordenados %}
+            {% for album in albuns_ordenados %}
+            <div class="album">
+                <a href="{% url 'bands:album' album.id %}">
+                    <img src="{{album.capa.url}}" alt="{{banda.nome}}">
+                </a>
+            </div>
+            {% endfor %}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

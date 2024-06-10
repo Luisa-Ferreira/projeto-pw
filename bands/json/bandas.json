@@ -1,0 +1,62 @@
+[
+    {
+      "nome": "Maroon 5",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 1994,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "Imagine Dragons",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2008,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "OneRepublic",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2002,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "Coldplay",
+      "nacionalidade": "Reino Unido",
+      "ano_criacao": 1996,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "The Chainsmokers",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2012,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "Twenty One Pilots",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2009,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "Panic! At The Disco",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2004,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "Jonas Brothers",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2005,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "DNCE",
+      "nacionalidade": "Estados Unidos",
+      "ano_criacao": 2015,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    },
+    {
+      "nome": "5 Seconds of Summer",
+      "nacionalidade": "Austrália",
+      "ano_criacao": 2011,
+      "fotoBanda": "caminho/para/a/imagem.jpg"
+    }
+]

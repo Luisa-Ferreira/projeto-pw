@@ -1,0 +1,294 @@
+[
+    {
+      "titulo": "Songs About Jane",
+      "nome_banda": "Maroon 5",
+      "ano_lancamento": 2002,
+      "data": "2002-06-25",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Harder to Breathe", "duracao": "2:53", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "This Love", "duracao": "3:26", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Shiver", "duracao": "2:59", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "She Will Be Loved", "duracao": "4:17", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Tangled", "duracao": "3:18", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+    {
+      "titulo": "Night Visions",
+      "nome_banda": "Imagine Dragons",
+      "ano_lancamento": 2012,
+      "data": "2012-09-04",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Radioactive", "duracao": "3:07", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Tiptoe", "duracao": "3:14", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "It's Time", "duracao": "4:00", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Demons", "duracao": "2:57", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "On Top of the World", "duracao": "3:12", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+    {
+      "titulo": "Native",
+      "nome_banda": "OneRepublic",
+      "ano_lancamento": 2013,
+      "data": "2013-03-22",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Counting Stars", "duracao": "4:17", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "If I Lose Myself", "duracao": "4:01", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Love Runs Out", "duracao": "3:44", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "I Lived", "duracao": "3:55", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Something I Need", "duracao": "4:01", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+    {
+      "titulo": "Every Teardrop Is a Waterfall",
+      "nome_banda": "Coldplay",
+      "ano_lancamento": 2011,
+      "data": "2011-06-03",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Every Teardrop Is a Waterfall", "duracao": "4:01", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Major Minus", "duracao": "3:30", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Moving to Mars", "duracao": "4:18", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "UFO", "duracao": "2:18", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Princess of China", "duracao": "3:59", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+    {
+      "titulo": "Viva la Vida or Death and All His Friends",
+      "nome_banda": "Coldplay",
+      "ano_lancamento": 2008,
+      "data": "2008-06-12",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Viva la Vida", "duracao": "4:02", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Violet Hill", "duracao": "3:42", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Lovers in Japan", "duracao": "6:51", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Death and All His Friends", "duracao": "6:18", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+      {
+      "titulo": "X&Y",
+      "nome_banda": "Coldplay",
+      "ano_lancamento": 2005,
+      "data": "2005-06-06",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Speed of Sound", "duracao": "4:48", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Fix You", "duracao": "4:54", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Talk", "duracao": "5:11", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "The Hardest Part", "duracao": "4:25", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+    {
+      "titulo": "Parachutes",
+      "nome_banda": "Coldplay",
+      "ano_lancamento": 2000,
+      "data": "2000-07-10",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Yellow", "duracao": "4:29", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Shiver", "duracao": "5:00", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Trouble", "duracao": "4:30", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Don't Panic", "duracao": "2:17", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+     {
+      "titulo": "Memories... Do Not Open",
+      "nome_banda": "The Chainsmokers",
+      "ano_lancamento": 2017,
+      "data": "2017-04-07",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Paris", "duracao": "3:41", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Something Just Like This", "duracao": "4:07", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Honest", "duracao": "3:28", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Young", "duracao": "3:44", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+     {
+      "titulo": "Blurryface",
+      "nome_banda": "Twenty One Pilots",
+      "ano_lancamento": 2015,
+      "data": "2015-05-17",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Stressed Out", "duracao": "3:22", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Ride", "duracao": "3:34", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Tear In My Heart", "duracao": "3:08", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Lane Boy", "duracao": "4:13", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+      {
+      "titulo": "Death of a Bachelor",
+      "nome_banda": "Panic! At The Disco",
+      "ano_lancamento": 2016,
+      "data": "2016-01-15",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Victorious", "duracao": "2:58", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Hallelujah", "duracao": "3:00", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Emperor's New Clothes", "duracao": "2:39", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Death of a Bachelor", "duracao": "3:23", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+     {
+      "titulo": "Happiness Begins",
+      "nome_banda": "Jonas Brothers",
+      "ano_lancamento": 2019,
+      "data": "2019-06-07",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Sucker", "duracao": "3:01", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Cool", "duracao": "2:47", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Only Human", "duracao": "3:03", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Sucker", "duracao": "3:01", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+     {
+      "titulo": "DNCE",
+      "nome_banda": "DNCE",
+      "ano_lancamento": 2016,
+      "data": "2016-11-18",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Cake by the Ocean", "duracao": "3:38", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Toothbrush", "duracao": "3:52", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Body Moves", "duracao": "3:58", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Cake by the Ocean", "duracao": "3:38", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+      {
+      "titulo": "Youngblood",
+      "nome_banda": "5 Seconds of Summer",
+      "ano_lancamento": 2018,
+      "data": "2018-06-15",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Youngblood", "duracao": "3:23", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Want You Back", "duracao": "2:53", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Valentine", "duracao": "3:17", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Youngblood", "duracao": "3:23", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+      {
+      "titulo": "V",
+      "nome_banda": "Maroon 5",
+      "ano_lancamento": 2014,
+      "data": "2014-08-29",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Maps", "duracao": "3:10", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Animals", "duracao": "3:51", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Sugar", "duracao": "3:55", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Maps", "duracao": "3:10", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+      {
+      "titulo": "Evolve",
+      "nome_banda": "Imagine Dragons",
+      "ano_lancamento": 2017,
+      "data": "2017-06-23",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Believer", "duracao": "3:24", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Thunder", "duracao": "3:07", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Whatever It Takes", "duracao": "3:21", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Believer", "duracao": "3:24", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+       {
+      "titulo": "Red Pill Blues",
+      "nome_banda": "Maroon 5",
+      "ano_lancamento": 2017,
+      "data": "2017-11-03",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "What Lovers Do", "duracao": "3:19", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Cold", "duracao": "3:54", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Wait", "duracao": "3:11", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "What Lovers Do", "duracao": "3:19", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+     {
+      "titulo": "Trench",
+      "nome_banda": "Twenty One Pilots",
+      "ano_lancamento": 2018,
+      "data": "2018-10-05",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Jumpsuit", "duracao": "3:58", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Levitate", "duracao": "2:25", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Nico and the Niners", "duracao": "3:45", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Jumpsuit", "duracao": "3:58", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+    {
+      "titulo": "A Head Full of Dreams",
+      "nome_banda": "Coldplay",
+      "ano_lancamento": 2015,
+      "data": "2015-12-04",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Adventure of a Lifetime", "duracao": "4:24", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Hymn for the Weekend", "duracao": "4:18", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Everglow", "duracao": "4:42", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Adventure of a Lifetime", "duracao": "4:24", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+     {
+      "titulo": "Radioative",
+      "nome_banda": "Imagine Dragons",
+      "ano_lancamento": 2017,
+      "data": "2017-06-23",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "Believer", "duracao": "3:24", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Thunder", "duracao": "3:07", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Whatever It Takes", "duracao": "3:21", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Believer", "duracao": "3:24", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+    {
+      "titulo": "A Beautiful Lie",
+      "nome_banda": "5 Seconds of Summer",
+      "ano_lancamento": 2005,
+      "data": "2005-08-16",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "The Kill (Bury Me)", "duracao": "3:52", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "From Yesterday", "duracao": "4:08", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "A Beautiful Lie", "duracao": "4:04", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "The Kill (Bury Me)", "duracao": "3:52", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+     {
+      "titulo": "Waking Up",
+      "nome_banda": "OneRepublic",
+      "ano_lancamento": 2009,
+      "data": "2009-11-17",
+      "capa": "caminho/para/a/imagem.jpg",
+      "musicas": [
+        {"nome": "All the Right Moves", "duracao": "3:59", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Secrets", "duracao": "3:44", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "Good Life", "duracao": "4:13", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+        {"nome": "All the Right Moves", "duracao": "3:59", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+      ]
+    },
+    {
+  "titulo": "Hands All Over",
+  "nome_banda": "Maroon 5",
+  "ano_lancamento": 2010,
+  "data": "2010-09-21",
+  "capa": "caminho/para/a/imagem.jpg",
+  "musicas": [
+    {"nome": "Misery", "duracao": "3:36", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+    {"nome": "Give a Little More", "duracao": "3:00", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+    {"nome": "Stutter", "duracao": "3:17", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+    {"nome": "Never Gonna Leave This Bed", "duracao": "3:17", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"},
+    {"nome": "I Can't Lie", "duracao": "3:31", "spotify": "https://open.spotify.com/track/1D1nixOVWOxvNfWi0UD7VX"}
+  ]
+}
+
+]

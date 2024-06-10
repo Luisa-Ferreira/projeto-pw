@@ -1,0 +1,51 @@
+{% extends 'artigos/layout.html' %}
+
+{% block content %}
+    <div class="article-header">
+        <p>Published {{artigo.data}}</p>
+        <p>By {{artigo.autor.autor.username}}<img src="{{artigo.autor.foto.url}}" alt="Author's photo" class="author-photo"></p>
+    </div>
+
+    <div class="article-content">
+        <h1>{{artigo.titulo}}</h1>
+        <h2>{{artigo.cabecaNoticia}}</h2>
+        <img src="{{artigo.foto.url}}" alt="Article image">
+        <h2>{{artigo.noticia}}</h2>
+    </div>
+
+    <div class="comments-section">
+        <h2>Comentários</h2>
+        {% load custom_tags %}
+        <ul>
+            {% for comentario_info in artigo.comentarios.all|comentarios_orderRate %}
+                <li>
+                    <h3><img src="{{comentario_info.autor.foto.url}}" alt={{comentario_info.autor.username}} class="author-photo"> {{comentario_info.autor.username}}, rated {{comentario_info.autor.rating}}</h3>
+                    <p>{{comentario_info.mensagem}}</p>
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'artigos:edita_comentario' comentario_info.id %}">
+                            <button>Editar Comentário</button>
+                        </a>
+                        <a href="{% url 'artigos:apaga_comentario' comentario_info.id %}">
+                            <button>Apagar Comentário</button>
+                        </a>
+                        <a href="{% url 'artigos:edita_autor' comentario_info.autor.id %}">
+                            <button>Editar Autor</button>
+                        </a>
+                        <a href="{% url 'artigos:apaga_autor' comentario_info.autor.id %}">
+                            <button>Apagar Autor</button>
+                        </a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% if request.user.is_authenticated %}
+        <div class="admin-actions">
+            <a href="{% url 'artigos:edita_artigo' artigo.id %}"><button>Editar Artigo</button></a>
+            <a href="{% url 'artigos:apaga_artigo' artigo.id %}"><button>Apagar Artigo</button></a>
+            <a href="{% url 'artigos:novo_comentario' artigo.id %}"><button>Novo Comentário</button></a>
+            <a href="{% url 'artigos:novo_autor' %}"><button>Novo Autor</button></a>
+        </div>
+    {% endif %}
+{% endblock %}

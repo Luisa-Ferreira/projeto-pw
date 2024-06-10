@@ -1,0 +1,18 @@
+{% extends 'projeto/layout.html' %}
+
+{% block content %}
+
+
+    <p><h2>{{disciplina.nomeDisciplina}}</h2></p>
+    <div class="projeto-info">
+        <p><h3>Nome: {{projeto.nome}}</h3></p>
+        <img src="{{projeto.imagem.url}}" alt="{{projeto.nome}}">
+        <p><h3>Descrição: {{projeto.descricao}}</h3></p>
+        <p><h3>Conceitos Aplicados: {{projeto.conceitosAplicados}}</h3></p>
+        <p><h3>Tecnologias usadas:  {{projeto.tecnologiasUsadas}}</h3></p>
+        <p><h3>Código:
+        <a href="{{projeto.linkGithub}}">{{projeto.linkGithub}}</a>
+        </h3></p>
+
+    </div>
+{% endblock %}

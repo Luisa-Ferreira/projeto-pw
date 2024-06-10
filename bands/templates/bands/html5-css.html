@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores e Combinadores CSS</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h3 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .intro {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #a37f7f;
+            color:white;
+        }
+        .icon {
+            vertical-align: middle;
+            color: green;
+        }
+        .not-used {
+            color: red;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Seletores CSS</h3>
+<p class="intro">CSS (Cascading Style Sheets) é a linguagem utilizada para estilizar páginas HTML. Permite que alteremos as cores, fontes, layouts e muito mais, proporcionando uma experiência visualmente agradável para todos os que acederem.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Seletor</th>
+            <th>Usado</th>
+            <th>Comentário</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Seletor Universal (*)</td>
+            <td><span class="material-icons icon">check_circle</span></td>
+            <td>Estiliza todos os elementos. <br>Uma das aplicações onde usei foi no 'curso' para atribuir o tipo de letra <br><a href={% url 'projeto:curso' %}>Curso</a></td>
+        </tr>
+        <tr>
+            <td>Seletor de Tipo (elemento)</td>
+            <td><span class="material-icons icon">check_circle</span></td>
+            <td>Aplica estilo a todos os elementos de um tipo específico.<br> Apliquei em todas as aplicações "p" e "h1" etc...<br><a href={% url 'projeto:curso' %}>Curso</a></td>
+        </tr>
+        <tr>
+            <td>Seletor de Classe (.class)</td>
+            <td><span class="material-icons icon">check_circle</span></td>
+            <td>Aplica estilo a elementos com uma classe específica. <br> Apliquei em todas as aplicações <br><a href={% url 'bands:index' %}>Bandas</a></td>
+        </tr>
+        <tr>
+            <td>Seletor de ID (#id)</td>
+            <td><span class="material-icons icon">check_circle</span></td>
+            <td>Estiliza o elemento com um ID específico<br>Apliquei mais na aplicação bandas <br><a href={% url 'bands:index' %}>Bandas</a></td>
+        </tr>
+        <tr>
+            <td>Seletor de Atributo ([atributo])</td>
+            <td><span class="material-icons not-used">cancel</span></td>
+            <td>Estiliza elementos com um atributo específico.</td>
+        </tr>
+        <tr>
+            <td>Seletor de Pseudo-classe (:pseudo-classe)</td>
+            <td><span class="material-icons not-used">cancel</span></td>
+            <td>Aplica estilo a elementos em um estado específico. </td>
+        </tr>
+        <tr>
+            <td>Seletor de Pseudo-elemento (::pseudo-elemento)</td>
+            <td><span class="material-icons not-used">cancel</span></td>
+            <td>Estiliza partes específicas de um elemento.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Combinadores de Seletores</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Combinador</th>
+            <th>Usado</th>
+            <th>Comentário</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Descendente (espaço)</td>
+            <td><span class="material-icons not-used">cancel</span></td>
+            <td>Seleciona elementos que são descendentes de um elemento específico.</td>
+        </tr>
+        <tr>
+            <td>Filho (>)</td>
+            <td><span class="material-icons not-used">cancel</span></td>
+            <td>Seleciona elementos que são filhos diretos de um elemento específico. </td>
+        </tr>
+        <tr>
+            <td>Irmão adjacente (+)</td>
+            <td><span class="material-icons not-used">cancel</span></td>
+            <td>Seleciona elementos que são irmãos adjacentes de um elemento específico. </td>
+        </tr>
+        <tr>
+            <td>Irmão geral (~)</td>
+            <td><span class="material-icons not-used">cancel</span></td>
+            <td>Seleciona elementos que são irmãos de um elemento específico, não necessariamente adjacentes.</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

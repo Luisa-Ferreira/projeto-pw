@@ -1,0 +1,235 @@
+/* estilos.css */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nome p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#grid-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button, .login {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover, .login:hover {
+    background-color: #0056b3;
+    transform: translateY(5px);
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.articles-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.articles-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.articles-card img {
+    width: 63%;
+    border-radius: 8px 8px 0 0;
+}
+
+.articles-card p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.articles-grid h3 {
+    text-decoration: none;
+    color: red;
+}
+
+.articles-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.articles-item {
+    margin-bottom: 20px;
+}
+
+.articles-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.articles-link:hover {
+    background-color: #2980b9;
+}
+
+.articlesbutton-text {
+    display: none;
+}
+
+.articles-link:hover .button-text {
+    display: inline;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/*------------------------artigos-------------------*/
+.article-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.article-content h1, .article-content h2 {
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.comments-section {
+    margin-top: 40px;
+}
+
+.comments-section h2 {
+    margin-bottom: 20px;
+}
+
+.comments-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments-section li {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comments-section li h3 {
+    margin: 0;
+}
+
+.admin-actions {
+    margin-top: 20px;
+    padding-bottom: 4%;
+}
+
+.admin-actions a {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #grid-container {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .button, .login {
+        width: 100%;
+    }
+
+    .article-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .author-photo {
+        margin: 10px 0 0 0;
+    }
+}

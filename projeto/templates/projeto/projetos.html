@@ -1,0 +1,21 @@
+{% extends 'projeto/layout.html' %}
+
+{% block content %}
+    <ul>
+        <div id="grid-projects">
+            {% for disciplina in disciplinas%}
+                {% if disciplina.projeto is not null %}
+                    <div class="projetos">
+                        <h3 style="padding: 1em;">
+                            
+                            <p>{{ disciplina.projeto.nome }}</p>
+                            <p>{{ disciplina.projeto.descricao }}</p>
+                            <p><a href="{% url 'projeto:projeto' disciplina.id %}">Ver mais...</a></p>
+                           
+                        </h3>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </ul>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'projeto/layout.html' %}
+
+{% block content %}
+
+    <p><h2>Disciplinas:</h2></p>
+
+    <ul>
+    {% for disciplina in disciplinas %}
+        <h3 ><li>
+        <p > <a href="{% url 'projeto:disciplina' disciplina.id %}">{{ disciplina }}</a></p>
+        </li></h3>
+    {% endfor %}
+    </ul>
+
+{% endblock %}

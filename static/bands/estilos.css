@@ -1,0 +1,387 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background: #f4f4f4;
+    color: #2E373D;
+    font-weight: 300;
+    min-height:100vh;
+}
+
+header {
+
+    background-color: #2E373D;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+   width:100%;
+   text-align:center;
+   color:#222;
+   background-color: rgba(255, 255, 255, 0.3)
+}
+
+.header-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.nome {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+
+}
+
+.nome p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.27em;
+}
+
+#grid-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#grid-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#buttonBack{
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.button{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 122px;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: #81878a;
+    transform: translateY(5px);
+}
+
+#loginBack{
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.login{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #EFB691;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 122px;
+    height: 40px;
+}
+
+.login:hover{
+    background-color: #fae9de;
+    transform: translateY(5px);
+}
+
+.bandas{
+    width: 24em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.bandas img {
+    width: 88%;
+    max-width: 300px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+
+.navbar {
+    background-color: #333;
+}
+
+.button-primary {
+    color: white;
+    background-color: blue;
+}
+
+.card-header {
+    font-size: 24px;
+}
+
+/* IDs */
+#main-header {
+    text-align: center;
+    color: darkred;
+}
+
+#footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+#sidebar {
+    width: 250px;
+}
+
+.band-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dividindo em duas colunas */
+    grid-template-rows: auto auto; /* Altura automática para cada linha */
+
+    /* Adicionando espaçamento entre as células */
+    gap: 20px;
+}
+
+.banda-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.nome-banda h2 {
+    margin-top: 0;
+}
+
+.admin-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.admin-buttons button {
+    background-color: #2E373D;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-buttons button:hover {
+    background-color: #1c252b;
+}
+
+.biografia {
+    margin-top: 7%;
+}
+
+.albuns-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.albuns-titulos h1 {
+    margin: 0;
+    grid-column: span 2;
+}
+
+.albuns-capas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+}
+
+.musica-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8%;
+}
+
+.album-indice {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.album-indice p {
+    margin-bottom: 5px;
+}
+
+.album-indice h2 {
+    color: #B7D5E5;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 20px;
+}
+
+.album-indice button {
+    background-color: #2E373D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.album-indice button:hover {
+    background-color: #1c252b;
+}
+
+.album-name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.album-name h1 {
+    color: #2E373D;
+}
+
+.album-name img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.musicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.musica {
+    background-color: #B7D5E5;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.musica a {
+    color: #2E373D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.musica a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* --------------------musicas*/
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.album-link {
+    color: #2E373D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.album-link:hover {
+    text-decoration: underline;
+}
+
+.edit-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.edit-buttons button {
+    background-color: #2E373D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-buttons button:hover {
+    background-color: #1c252b;
+}
+
+.album-info {
+    margin-top: 20px;
+}
+
+.album-info h1 {
+    color: #2E373D;
+    margin-bottom: 10px;
+}
+
+.album-info p {
+    margin-bottom: 5px;
+}
+
+.album-info p:last-child {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .headerRight {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24%;
+        padding: 0.5%;
+    }
+
+    .bandas img {
+        border-width: 2px;
+        max-width: 100%;
+    }
+}
+

@@ -1,0 +1,6 @@
+def metereologia_view(request):
+    url =''
+
+    response = requests.get(url)
+    context = {'tempos':reponse.json()}
+    return render(request, '',context)

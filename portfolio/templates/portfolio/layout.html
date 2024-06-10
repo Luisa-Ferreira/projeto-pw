@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="{% static 'portfolio/estilos.css' %}">
+
+    <title>Luísa Ferreira</title>
+    <style>
+        {% block style %}
+        {% endblock %}
+    </style>
+</head>
+<body>
+    <nav class="custom-navbar">
+        <div class="navbar-titulo">Luísa Ferreira</div>
+        <div class="navbar-content">
+            <div class="navbar-left">
+                <div id="clock" class="clock"></div>
+                <button id="darkModeToggle" class="button">Modo Escuro</button>
+            </div>
+
+            <div class="navbar-center">
+                <ul class="dropdown">
+                    <a href="#" class="button" >Menu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="{% url 'projeto:curso' %}">Faculdade</a></li>
+                            <li><a href="{% url 'meteo:cidades' %}">Metereologia</a></li>
+                            <li><a href="{% url 'bands:index' %}">Bandas</a></li>
+                            <li><a href="{% url 'artigos:artigos' %}">Artigos</a></li>
+                            <li><a href="{% url 'portfolio:meuwebsite' %}">InnovaTech</a></li>
+                            <li><a href="#" >Extras</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="{% url 'bands:html5_css' %}">Html5</a></li>
+                                    <li><a href="{% url 'pwsite:index' %}">Pwsite</a></li>
+                                    <li><a href="{% url 'novaapp:index' %}">Nova App</a></li>
+                                    <li><a href="{% url 'festivais:localizacao' %}">Festivais</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <a href="{% url 'portfolio:mebyme' %}"><button class="button">MeByMe</button></a>
+                <a href="{% url 'portfolio:landing-page' %}"><button class="button">Home</button></a>
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'autenticacao:logout' %}">
+                    <button class="button">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Logout
+                    </button>
+                </a>
+                {% else %}
+                <a href="{% url 'autenticacao:login' %}"><button class="button">Login</button></a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <script>
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+        }
+
+        function updateClock() {
+            const clock = document.getElementById('clock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        updateClock(); // Run once to avoid delay
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>

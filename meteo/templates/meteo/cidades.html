@@ -1,0 +1,11 @@
+{% extends 'meteo/layout.html' %}
+
+{% block content %}
+
+    <ul>
+        {% for local, globalIdLocal in cidade.items %}
+            <li><a href="{% url 'meteo:cidade' globalIdLocal 0 %}"> {{local}}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

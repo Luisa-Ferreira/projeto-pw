@@ -1,0 +1,42 @@
+{% extends 'bands/layout.html' %}
+
+{% block content %}
+
+<div class="musica-container">
+    <div class="album-indice">
+        {% for banda in bandas %}
+        <p><a class="album-link" href="{% url 'bands:banda' banda.id %}"> Banda </a></p>
+        <h2 style="color: #B7D5E5; text-shadow: 2px 2px 5px black;">{{banda.nome}}</h2>
+        {% endfor %}
+        {% if user_is_editor %}
+        <a href="{% url 'bands:edita_album' album.id %}">
+            <button>Editar informação de {{ album.titulo }} </button>
+        </a>
+        {% endif %}
+        {% if user_is_superuser  %}
+        <a href="{% url 'bands:apaga_album' album.id %}">
+            <button>Extermina o Album</button>
+        </a>
+        {% endif %}
+        
+        {% if user_is_editor %}
+        <a href="{% url 'bands:nova_musica' album.id %}">
+            <button>Inserir uma nova Musica</button>
+        </a>
+        {% endif %}
+    </div>
+    <div class="album-name">
+        <h1> {{album.titulo}}</h1>
+        <img src="{{album.capa.url}}" alt="{{banda.nome}}">
+        <p>{{album.ano_lancamento}}</p>
+    </div>
+    <div class="musicas-grid">
+        {% for musica in album.musicas.all %}
+        <div class="musica">
+            <p><a href="{% url 'bands:musica' musica.id %}">{{musica.nome}} </a></p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

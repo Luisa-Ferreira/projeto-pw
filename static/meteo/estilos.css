@@ -1,0 +1,142 @@
+
+*{
+    font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #E2E2E2;
+}
+
+header {
+    box-sizing: border-box;
+    background: rgb(178, 200, 203);
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000;
+}
+
+footer{
+   text-align:center;
+   background-color: rgba(0, 0, 0,0.3);
+
+}
+
+.button{
+    font-weight: bold;
+    text-align: center;
+    background-color: #d1ebf7;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 122px;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: transparent;
+    transform: translateY(5px);
+}
+
+#loginBack{
+    text-align: center;
+    background-color:white ;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.login{
+    font-weight: bold;
+    text-align: center;
+    background-color: #f9d428;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 122px;
+    height: 40px;
+}
+.login:hover {
+    background-color: transparent;
+    transform: translateY(5px);
+}
+
+.text {
+    text-align: justify;
+    padding: 2%;
+    width: 100%; /* Ensure it takes up the full width of the parent */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.weather {
+    word-wrap: break-word; /* Ensures long words break and wrap to the next line */
+    overflow-wrap: break-word; /* Ensures long words break and wrap to the next line */
+    max-width: 100%; /* Ensure the text container doesn't overflow */
+    white-space: pre-wrap; /* Ensure that whitespaces are preserved and long words are broken */
+}
+
+
+
+
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f9d428;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}

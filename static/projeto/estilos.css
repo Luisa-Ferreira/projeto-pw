@@ -1,0 +1,223 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+#bg {
+    background-size:cover;
+    background-image: url('/static/imagens/layoutImage.png');
+}
+
+body {
+    margin: 0;
+    background: #eac8b0;
+    color: #2E373D;
+    font-weight: 300;
+    min-height:100vh;
+}
+
+header {
+
+    background-color: #2E373D;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.nome {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+
+}
+
+.nome p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.27em;
+}
+
+#grid-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#grid-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#buttonBack{
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.button{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 122px;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: #81878a;
+    transform: translateY(5px);
+}
+
+#loginBack{
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.login{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #EFB691;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 122px;
+    height: 40px;
+}
+
+.login:hover{
+    background-color: #fae9de;
+    transform: translateY(5px);
+}
+
+
+.faculdade {
+    font-size: calc(1vw + 3em);
+    font-weight: bold;
+    text-align: center;
+    color: #C67540;
+    letter-spacing: 0.3em;
+    margin-bottom:0;
+}
+
+.universidade{
+    padding-bottom:20px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+.text{
+    text-align: justify;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+#bodycontainer{
+    font-size: 14px;
+    padding-left: 15%; /* Padding apenas nas laterais */
+    padding-right: 15%;
+}
+
+.projetos{
+    width: 120%;
+    min-height: 150px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+a {
+    color: #C67540;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ddbb85;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.projeto-info{
+    padding-top: 0.5%;
+}
+
+.projeto-info img{
+    width: 88%;
+    max-width: 300px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+footer {
+   width:100%;
+   text-align:center;
+   color:#222;
+   background-color: rgba(255, 255, 255, 0.3)
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #grid-container > div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #grid-container > div:last-child {
+        margin-bottom: 0;
+    }
+
+    .button, .login {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .faculdade {
+    font-size: 2.2em;
+    }
+
+}
+

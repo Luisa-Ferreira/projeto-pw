@@ -1,0 +1,19 @@
+{% extends 'portfolio/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+    <h1>Django hands-on</h1>
+
+    <video width="560" height="315" controls>
+        <source src="{% static 'portfolio/Django hands-on por Luísa Ferreira.mp4' %}" type="video/mp4">
+    </video>
+
+    <h1>Visita Guiada ao Website</h1>
+    <video width="560" height="315" controls>
+        <source src="{% static 'portfolio/visita.mp4' %}" type="video/mp4">
+    </video>
+
+{% endblock %}

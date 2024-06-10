@@ -1,0 +1,16 @@
+{% extends 'artigos/layout.html' %}
+
+{% block content %}
+    <h3>Cria um Autor</h3>
+
+    <form action="" method="post" enctype='multipart/form-data'>
+
+      {% csrf_token %}
+      <table>
+          {{ form }}
+      </table>
+      <input type="submit" value="Crie um utilizador">
+
+    </form>
+
+{% endblock %}

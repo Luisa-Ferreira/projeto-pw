@@ -1,0 +1,34 @@
+{% extends 'bands/layout.html' %}
+
+{% block content %}
+
+<div class="container">
+    {% for album in albuns %}
+    <a class="album-link" href="{% url 'bands:album' album.id %}"> Album</a>
+    {% endfor %}
+    
+    <div class="album-info">
+        <h1> {{musica.nome}}</h1>
+        {% if user_is_editor %}
+        <div class="edit-buttons">
+            <a href="{% url 'bands:edita_musica' musica.id %}">
+                <button>Editar informação de {{ musica.nome }} </button>
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if user_is_superuser %}
+        <div class="edit-buttons">
+            <a href="{% url 'bands:apaga_musica' musica.id %}">
+                <button>Extermina {{musica.nome}}</button>
+            </a>
+        </div>
+        {% endif %}
+        
+        <p>{{musica.duracao}}</p>
+        <p>{{musica.spotify}}</p>
+        <p>{{musica.letra}}</p>
+    </div>
+</div>
+
+{% endblock %}

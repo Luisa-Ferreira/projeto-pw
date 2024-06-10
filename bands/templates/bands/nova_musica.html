@@ -1,0 +1,16 @@
+{% extends 'bands/layout.html' %}
+
+{% block content %}
+    <h3>Cria a nova Musica POP-ROCK</h3>
+
+    <form action="" method="post" enctype='multipart/form-data'>
+
+      {% csrf_token %}
+      <table>
+          {{ form }}
+      </table>
+      <input type="submit" value="Cria uma nova musica">
+
+    </form>
+
+{% endblock %}

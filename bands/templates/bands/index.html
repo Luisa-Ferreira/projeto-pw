@@ -1,0 +1,33 @@
+{% extends 'bands/layout.html' %}
+
+{% block content %}
+
+    <div style="padding:2%;padding-bottom: 0;">
+        {% if request.user.is_authenticated %}
+
+                <a href="{% url 'bands:nova_banda' %}">
+                <button>Inserir uma nova Banda</button>
+                </a>
+            </p>
+        {% endif %}
+
+        <p >Existem {{ bandas|length }} bandas:</p>
+    </div>
+
+    <div class="bandas-container">
+        {% load bandstags %}
+            <ul>
+            {% for banda in bandas|mais_albuns %}
+                <p><div class="bandas">
+                    <h3><a href="{% url 'bands:banda' banda.id %}"><img src="{{banda.fotoBanda.url}}" alt="{{banda.nome}}"></a></h3>
+                    <p>Banda: <a href="{% url 'bands:banda' banda.id %}">{{banda.nome}}</a></p>
+                    <p>Ano de criaçao {{banda.ano_criacao}}</p>
+                </div></p>
+
+            {% endfor %}
+            </ul>
+    </div>
+
+
+
+{% endblock %}

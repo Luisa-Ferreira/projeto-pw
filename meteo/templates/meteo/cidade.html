@@ -1,0 +1,27 @@
+{% extends 'meteo/layout.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><a href="{% url 'meteo:cidade' cidadeid 0 %}">Hoje</a></li>
+            <li><a href="{% url 'meteo:cidade' cidadeid 1 %}">Amanhã</a></li>
+            <li><a href="{% url 'meteo:cidade' cidadeid 2 %}">3 dias</a></li>
+            <li><a href="{% url 'meteo:cidade' cidadeid 3 %}">4 dias</a></li>
+            <li><a href="{% url 'meteo:cidade' cidadeid 4 %}">5 dias</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Previsão Meteorológica para {{ nomecidade }} em {{ forecastDate }} <img src="{{ iconPath }}" alt="Ícone do Tempo"></h1>
+        <ul>
+            <li>{{ description }}</li>
+            <li>Probabilidade de Precipitação: {{ data.precipitaProb }}%</li>
+            <li>Temperatura Mínima: {{ data.tMin }}°C</li>
+            <li>Temperatura Máxima: {{ data.tMax }}°C</li>
+            <li>Direção do Vento: {{ data.predWindDir }}</li>
+            <li>Classe de Velocidade do Vento: {{ data.classWindSpeed }}</li>
+            
+        </ul>
+    </div>
+</div>
+{% endblock %}

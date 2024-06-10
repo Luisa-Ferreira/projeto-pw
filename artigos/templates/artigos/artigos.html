@@ -1,0 +1,23 @@
+{% extends 'artigos/layout.html' %}
+
+{% block content %}
+
+    <p><h2>Artigos:</h2></p>
+
+    <div class="articles-grid">
+        {% for artigo_info in artigos %}
+            <a href="{% url 'artigos:artigo' artigo_info.id %}" class="articles-card">
+                <img src="{{ artigo_info.foto.url }}" alt="Imagem do artigo" class="articles-image">
+                <h3>{{ artigo_info.titulo }}</h3>
+            </a>    
+            
+        {% endfor %}
+    </div>
+
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'artigos:novo_artigo' %}">
+            <button class="create-article">Crie um novo Artigo Aqui</button>
+        </a>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'meteo/layout.html' %}
+
+{% block content %}
+
+    <div class= text>
+        <p>Cidade: {{meteo.city}}</p>
+
+        <p>Data: {{meteo.date}}</p>
+
+        <p>Temperatura minima: {{meteo.min_temp}}</p>
+
+        <p>Temperatura máxima: {{meteo.max_temp}}</p>
+
+        <p class="meteo">{{meteo.description}}</p>
+
+        {{description}}
+
+        {% load static %}
+        <img src="{{ meteo.iconPath }}" alt="Weather Icon"/>
+
+    </div>
+{% endblock %}
